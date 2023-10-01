@@ -1,0 +1,11 @@
+xclip 			neovim 				Clipboard tool to copy and past form the system
+
+gcc 			treesitter 			A c compiler needed to compile parsers to .so libraries
+curl 			treesitter,mason 	To download (parsers, LSPs) from the internet
+tar 			treesitter,mason 	To extract (parsers, LSPs) content once downloaded
+git 			treesitter,lazy 	To download (parsers,plugins) content from repos
+node 			treesitter 			only needed for :TSInstallFromGrammar	
+
+unzip 			mason 				To unzip LSPs once downloaded
+gzip 			mason 				To extract LSPs once downloaded
+bash 			mason 				To execute install script of LSPs
