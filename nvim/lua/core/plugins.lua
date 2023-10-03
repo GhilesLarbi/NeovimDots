@@ -69,10 +69,8 @@ local plugins = {
 		dependencies = { 'nvim-tree/nvim-web-devicons' },
 	},
 	-- Barbar tabline
-	{
-		'romgrk/barbar.nvim',
-		dependencies = { 'nvim-tree/nvim-web-devicons' },
-	},
+	-- using lazy.nvim
+	{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
 	-- Highlight code Treesitter
 	{
@@ -109,6 +107,11 @@ local plugins = {
 			},
 			exclude = {}, -- exclude these filetypes,
 		},
+	},
+
+	{
+		'nvim-telescope/telescope.nvim',
+		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 
 

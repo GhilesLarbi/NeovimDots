@@ -29,22 +29,18 @@ is_item_exist() {
 	return 1
 }
 
-# Function to echo text in red
 echo_red() {
   echo -e "\033[1;31m$1\033[0m"  # Red text
 }
 
-# Function to echo text in blue
 echo_blue() {
   echo -e "\033[1;34m$1\033[0m"  # Blue text
 }
 
-# Function to echo text in green
 echo_green() {
   echo -e "\033[1;32m$1\033[0m"  # Green text
 }
 
-# Function to echo text in orange
 echo_orange() {
   echo -e "\033[1;33m$1\033[0m"  # Orange text
 }
@@ -78,7 +74,7 @@ done < dependencies.txt
 
 echo 
 if $is_messing_dep; then
-	echo_orange " Please install the dependencies listed above first"
+	echo_orange " install the dependencies listed above"
 	exit
 fi
 
