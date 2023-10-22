@@ -99,6 +99,11 @@ lspconfig.lua_ls.setup({
 })
 
 
+lspconfig.eslint.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

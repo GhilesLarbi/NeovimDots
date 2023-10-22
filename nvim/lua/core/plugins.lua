@@ -115,6 +115,17 @@ local plugins = {
 	},
 
 
+	-- auto pairs
+	{
+		'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		opts = {} -- this is equalent to setup({}) function
+	},
+
+	-- auto tag
+	"windwp/nvim-ts-autotag",
+
+
 	-- ###################################### --
 	-- LSP --
 	{

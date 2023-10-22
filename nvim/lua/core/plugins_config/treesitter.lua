@@ -8,6 +8,9 @@ treesitter.setup({
 	ensure_installed = { "lua", "javascript", "html", "css", "bash" },
 	sync_install = false,
 	auto_install = false,
+	autotag = {
+		enable = true,
+	},
 	highlight = { enable = true },
 	indent = { enable = true },
 })
